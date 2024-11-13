@@ -5,7 +5,7 @@ $GLOBALS['TCA']['tx_entity_domain_model_entity']['external'] = [
 		'translation' => [
 			'connector' => 'json',
 			'parameters' => [
-				'uri' => 'fileadmin/import/products/test-abc.json',
+				'uri' => 'fileadmin/import/product/product.json',
 				'encoding' => 'utf8',
 			],
 			'data' => 'array',
@@ -30,8 +30,60 @@ $GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['subtitle']['externa
 	'field' => 'subtitle'
 ];
 
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['variant_title']['external']['translation'] = [
+	'field' => 'variant_title'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['short_description']['external']['translation'] = [
+	'field' => 'short_description'
+];
+
 $GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['long_description']['external']['translation'] = [
 	'field' => 'long_description'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['technical_data']['external']['translation'] = [
+	'field' => 'technical_data'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['technical_features_description']['external']['translation'] = [
+	'field' => 'technical_features_description'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['options']['external']['translation'] = [
+	'field' => 'options'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['accesories_description']['external']['translation'] = [
+	'field' => 'accesories_description'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['air_consumption_data']['external']['translation'] = [
+	'field' => 'air_consumption_data'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['seo_title']['external']['translation'] = [
+	'field' => 'seo_title'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['meta_description']['external']['translation'] = [
+	'field' => 'meta_description'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['og_title']['external']['translation'] = [
+	'field' => 'og_title'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['og_description']['external']['translation'] = [
+	'field' => 'og_description'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['twitter_title']['external']['translation'] = [
+	'field' => 'twitter_title'
+];
+
+$GLOBALS['TCA']['tx_entity_domain_model_entity']['columns']['twitter_description']['external']['translation'] = [
+	'field' => 'twitter_description'
 ];
 
 
