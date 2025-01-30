@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ps14\\EntityProductImport\\": "Classes"
+			"Ps\\EntityProductImport\\": "Classes"
 		}
 	},
 	"license": "closed",

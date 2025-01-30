@@ -1,5 +1,22 @@
 <?php
 
+// ---------------------------------------------------------------------------------------------------------------------
+// Neue Felder
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_entity_domain_model_entity', [
+	'token' => [
+		'exclude' => true,
+		'label' => 'LLL:EXT:entity_product_import/Resources/Private/Language/locallang_tca.xlf:tx_entity_domain_model_entity.token',
+		'config' => [
+			'type' => 'input',
+			'size' => 40,
+			'eval' => 'trim',
+			'readOnly' => true,
+		],
+	],
+]);
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Import Konfiguration
 $GLOBALS['TCA']['tx_entity_domain_model_entity']['external'] = [
 	'general' => [
 		'translation' => [
@@ -11,7 +28,7 @@ $GLOBALS['TCA']['tx_entity_domain_model_entity']['external'] = [
 			'data' => 'array',
 			'referenceUid' => 'token',
 			'priority' => 10,
-			'description' => 'Test Product Importer',
+			'description' => 'Product Importer',
 			'pid' => 51,
 			'disabledOperations' => 'insert, delete',
 		]
